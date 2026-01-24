@@ -42,7 +42,7 @@ function ProjectsSection() {
               <div className="ps-accent-line" />
               <h2 className="ps-project-name">{project.title}</h2>
               <p className="ps-description">{project.details}</p>
-              <Link to="/about-details" className="ps-btn">Know More</Link>
+              {/* <Link to="/about-details" className="ps-btn">Know More</Link> */}
             </div>
             <div className="ps-image-block">
               <img src={project.image} alt={project.title} />

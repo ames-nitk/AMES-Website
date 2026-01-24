@@ -7,27 +7,27 @@ import lakeImg from '../assets/lake.jpeg';
 const eventsData = [
   {
     title: "Smart Fish Counting System",
-    details: "Details about it - (Absolutely! You can explore our design services for 30-days. Plus, we offer a complimentary personalized 60-minute onboarding session to get you started.)",
+    details: "Smart Fish Counting System automatically detects and counts fish in real time using computer vision and sensor technology.It improves accuracy, reduces manual effort, and supports efficient aquaculture and fisheries management.",
     image: fishImg
   },
   {
     title: "Automation of Fish Breeding Systems",
-    details: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    details: "Automation of Fish Breeding Systems uses sensors, controllers, and intelligent software to monitor and regulate breeding conditions such as temperature, water quality, and feeding.It increases breeding efficiency, reduces manual labor, and ensures healthy and consistent fish production.",
     image: autoImg
   },
   {
     title: "Variable Gap Fish Sorting System",
-    details: "A high-energy workshop where teams rapidly prototype and test ideas with guidance from industry experts.",
+    details: "Variable Gap Fish Sorting System automatically sorts fish based on size by adjusting gap spacing in real time.It improves sorting accuracy, reduces manual handling, and enhances efficiency in aquaculture operations.",
     image: gapImg
   },
   {
     title: "Vehicle Tracking System",
-    details: "Monthly sessions with guest speakers from leading tech firms, sharing insights on current trends and innovations.",
+    details: "Vehicle Tracking System uses GPS and real-time data to monitor vehicle location, movement, and status.It improves fleet management, security, and operational efficiency through accurate tracking and reportin",
     image: trackImg
   },
   {
     title: "NITK Lake Water Saving System",
-    details: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    details: "NITK Lake Water Saving System is designed to monitor and manage lake water usage efficiently through automated sensing and control mechanisms.It helps reduce water wastage, supports conservation efforts, and ensures sustainable water management.",
     image: lakeImg
   }
 ];

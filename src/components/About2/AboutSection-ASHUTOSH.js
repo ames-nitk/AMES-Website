@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import { useFadeUpOnScroll } from '../../animation/useFadeUpOnScroll';
 import './AboutSection-ASHUTOSH.css';
+import kvImage from '../../assets/KV.jpg';
+import murgendrappaImage from '../../assets/Murigendrappa.jpg';
+import nitkImage from '../../assets/nitk.jpg';
+import amesImage from '../../assets/AMES LOGO.png';
 
 function AboutSection() {
   const fadeRefs = useFadeUpOnScroll();
@@ -28,14 +32,12 @@ function AboutSection() {
           {/* About NITK */}
           <div className="as-info-card as-info-row" ref={el => fadeRefs.current[1] = el}>
             <div className="as-img-column">
-              <div className="as-media-box as-img-nitk" />
+              <img src={nitkImage} alt="NITK" className="as-media-box" />
             </div>
             <div className="as-text-column">
               <h3 className="as-card-sub-title">About NITK</h3>
               <div className="as-card-description">
-                Cultivate a culture of engineering excellence through shared knowledge and collaborative initiatives.<br />
-                Bridge the academia-industry gap via projects & mentoring.<br />
-                Promote interdisciplinary research & social innovation
+               National Institute of Technology Karnataka (NITK), also known as NITK Surathkal, is a premier public technical university in Surathkal, Mangaluru, India, established in 1960 (originally as Karnataka Regional Engineering College (KREC)), renowned for its strong engineering programs, research, and a distinctive private beach on its campus by the Arabian Sea.
               </div>
             </div>
           </div>
@@ -43,20 +45,17 @@ function AboutSection() {
           {/* About AMES */}
           <div className="as-info-card as-info-row as-reverse" ref={el => fadeRefs.current[2] = el}>
             <div className="as-img-column">
-              <div className="as-media-box as-img-ames" />
+              <img src={amesImage} alt="AMES" className="as-media-box" />
             </div>
             <div className="as-text-column">
               <h3 className="as-card-sub-title">About AMES</h3>
               <div className="as-card-description">
-                Cultivate a culture of engineering excellence through shared knowledge and collaborative initiatives.<br />
-                Bridge the academia-industry gap via projects & mentoring.<br />
-                Promote interdisciplinary research & social innovation
+                The AMES Projects Team is dedicated to enabling hands-on engineering by tackling real-world problems and developing industry-inspired solutions
               </div>
             </div>
           </div>
         </div>
 
-        {/* Team Backbone Section */}
         <div className="as-section-divider">
           <span className="as-teams-label">Teams Backbone</span>
         </div>
@@ -64,13 +63,13 @@ function AboutSection() {
           <div className="as-backbone-top-row">
             {[1, 2].map((i) => (
               <div className="as-member-card as-large" key={i}>
-                <div className="as-member-img-box as-large" />
-                <div className="as-member-name">Name</div>
-                <div className="as-member-role">Position</div>
+                <img src={i === 1 ? murgendrappaImage : kvImage} alt={i === 1 ? 'KV' : 'Murgendrappa'} className="as-member-img-box as-large" />
+                <div className="as-member-name">{i === 1 ?  'Dr. S M Murigendrappa' : 'Dr. Khyati Verma'}</div>
+                <div className="as-member-role">{i === 1 ?  'Head of the Department (HOD)' : 'Faculty Advisor'}</div>
               </div>
             ))}
           </div>
-          <div className="as-members-grid">
+          {/* <div className="as-members-grid">
             {Array.from({ length: 8 }).map((_, i) => (
               <div className="as-member-card" key={i}>
                 <div className="as-member-img-box" />
@@ -78,11 +77,12 @@ function AboutSection() {
                 <div className="as-member-role">Position</div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
+        
 
         {/* Other Teams */}
-        {['Core Team', 'Web Team'].map((teamName) => (
+        {/* {['Core Team', 'Web Team'].map((teamName) => (
           <React.Fragment key={teamName}>
             <div className="as-section-divider">
               <span className="as-teams-label">{teamName}</span>
@@ -97,7 +97,7 @@ function AboutSection() {
               ))}
             </div>
           </React.Fragment>
-        ))}
+        ))} */}
       </div>
     </section>
   );

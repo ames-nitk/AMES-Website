@@ -18,11 +18,11 @@
   font-size: 3rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .ps-carousel-container {
-  margin-top: 2rem;
+  margin-top: -3rem;
   width: 100%;
   position: relative;
   padding-left: 0;
