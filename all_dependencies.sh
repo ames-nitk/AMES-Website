@@ -17,7 +17,9 @@ apt-get install -y --no-install-recommends \
   ca-certificates \
   gnupg \
   build-essential \
-  python3
+  python3 \
+  certbot \
+  python3-certbot-nginx
 
 if ! command -v node >/dev/null 2>&1; then
   echo "Installing Node.js 18.x..."

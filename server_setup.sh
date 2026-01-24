@@ -4,13 +4,14 @@ set -euo pipefail
 # Configuration Variables
 # "DOMAIN" defaults to "_" which is the Nginx wildcard (Catch-All).
 # This allows the site to work via IP address immediately.
-DOMAIN="${DOMAIN:-_}"
+DOMAIN="${DOMAIN:-ames.nitk.ac.in}"
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 APP_PORT="${APP_PORT:-3000}"
 
 echo "============================================"
 echo "AMES Website Server Setup - Local Repo"
 echo "============================================"
+echo "Tip: For SSL (HTTP->HTTPS redirect), run: sudo DOMAIN=example.com CERTBOT_EMAIL=you@example.com ./ssl_certbot.sh"
 
 # 1. Build the App
 echo "Building Application..."
