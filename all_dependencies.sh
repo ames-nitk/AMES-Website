@@ -11,8 +11,6 @@ apt-get update && apt-get upgrade -y
 
 echo "Installing essential packages..."
 apt-get install -y --no-install-recommends \
-  btop \
-  nvim \
   nginx \
   git \
   curl \
