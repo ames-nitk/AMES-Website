@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "./footer.css";
 import logo1 from '../../assets/logo3.png';
-import Logo from '../../assets/Asset19.svg';
+import Logo from '../../assets/footerlogo.png';
 
 let scrollToFooterSection = () => { };
 
@@ -22,7 +22,7 @@ const Footer = () => {
                 {/* Left Section */}
                 <div className="footer-left">
                     <div className="zxz">
-                        <img style={{ width: '180px', height: '100px' }} src={Logo} alt="AMES Logo" className="logo" />
+                        <img style={{ width: '185px', height: '80px' }} src={Logo} alt="AMES Logo" className="logo" />
                     </div>
                     <p>
                         Association of Mechanical Engineering Students (AMES),<br />

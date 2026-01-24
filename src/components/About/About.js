@@ -79,7 +79,7 @@ const About = () => {
             >
               <div className={ 'alumni-card'}
                 style={{
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${alumni.imagePath})`,
+                  backgroundImage: `url(${alumni.imagePath})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}>

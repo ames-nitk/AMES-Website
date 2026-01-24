@@ -4,6 +4,7 @@ import logo from '../../assets/AMES_LOGO.png';
 import { scrollToAboutSection } from '../About/About';
 import { scrollToFooterSection } from '../Footer/footer';
 import { scrollToEventSection } from '../Events/EventsSection';
+import amesDayPdf from "../../assets/AMES-DAY.pdf";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,8 +75,10 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="../../assets/AMES-DAY.pdf" download>AMES-DAY</a>
-        </li>
+  <a href={amesDayPdf} target="_blank" rel="noreferrer">
+    AMES-DAY
+  </a>
+</li>
       </ul>
 
       {/* ===== Right: Contact Button (Desktop) ===== */}

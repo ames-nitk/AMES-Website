@@ -1,10 +1,10 @@
 import event1 from "../assets/event1.jpeg";
-import event2 from "../assets/event2.jpeg";
+import event2 from "../assets/events21.png";
 import event3 from "../assets/event3.jpeg";
 import event4 from "../assets/event4.jpeg";
 const eventsData = [
   {
-    title: "Fishery Visit",
+    title: " Industrial visit, Mangalore fisheries ",
     details: "AMES NITK visited Aquatic Biosystems, Mangalore, with CSD NITK and found imported fish automation struggles with Indian species. We’re building indigenous solutions: an AI-based Smart Fish Counter and an adjustable Variable Fish Size Sorter.",
     image: event1,
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7409597172339359744'
@@ -22,7 +22,7 @@ const eventsData = [
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7364246502891794433'
   },
   {
-    title: "AI in Mechanical Systems",
+    title: "Mech Connect Series Discussions",
     details: "AMES NITK hosted the first Mechonnect Series session on AI in Mechanical Systems, engaging 110+ alumni and students successfully.",
     image: event4,
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7364246306451574784'
