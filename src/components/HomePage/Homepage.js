@@ -4,7 +4,7 @@ import About from '../About/About';
 import EventsSection from '../Events/EventsSection';
 import Contact from '../Contact/contacts';
 import './Homepage.css';
-import bannerImage from '../../assets/mech.jpg.jpeg';
+import bannerImage from '../../assets/bg1.png';
 import visionIcon from '../../assets/vision.png';
 import useTypewriter from '../../animation/useTypwriter2';
 
