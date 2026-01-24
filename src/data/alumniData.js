@@ -7,6 +7,7 @@ import BenedictMachado from '../assets/BenedictMachado.jpg';
 import sahilbarua from '../assets/SahilBarua.png';
 import ThomasZacharia from '../assets/ThomasZacharia.jpg';
 import shashankavadhani from '../assets/ShashankAvadhani.jpeg';
+import niranjanmahabalappa from '../assets/nirajanmahabalapa.jpeg';
 const alumniData = [
   {
     name: "KV Kamath",
@@ -19,14 +20,14 @@ const alumniData = [
     imagePath: kvkamath
   },
   {
-    name: "K Ullas Karanth",
-    role: "Zoologist",
-    intro: "Dr. K. Ullas Karanth is a world-renowned conservation zoologist and a leading authority on tigers. As the Director Emeritus at the Centre for Wildlife Studies, he pioneered the use of camera traps for wildlife population studies, revolutionizing conservation science.",
+     name: "Sahil Barua",
+    role: "Co-founder and CEO of Delhivery",
+    intro: "Sahil Barua is the co-founder and CEO of Delhivery, India's largest fully integrated logistics provider. He has scaled the company from a local courier service into a multi-billion dollar enterprise, transforming the e-commerce and supply chain landscape through technology.",
     instaicon: instaIcon,
     instalink: "#",
     linkedinicon: LinkedInIcon,
-    linkedinlink: "https://www.linkedin.com/in/k-ullas-karanth-486161a/",
-    imagePath: kullaskaranth
+    linkedinlink: "https://www.linkedin.com/in/sahil-barua-6229764/",
+    imagePath: sahilbarua
   },
   {
     name: "Aravind Melligeri",
@@ -34,13 +35,20 @@ const alumniData = [
     intro: "Aravind Melligeri is the Chairman & CEO of Aequs, a global precision manufacturing company. A co-founder of Quest Global, he is a key figure in India's aerospace and manufacturing ecosystem, having established the nation's first aerospace Special Economic Zone (SEZ).",
     instaicon: instaIcon,
     instalink: "#",
-    linkedinicon: LinkedInIcon, 
+    linkedinicon: LinkedInIcon,
     linkedinlink: "https://www.linkedin.com/in/aravind-melligeri-8409384/",
     imagePath: aravindmelligeri
   },
   {
 
-    intro: "An accomplished professional with a track record of excellence in their field. Since graduating, they have made significant contributions to the industry and continue to serve as a mentor to our current student body, embodying the values of our institution.",
+    name: "Niranjan Mahabalapa",
+    role: "CEO of Ideas to Impacts",
+    intro: "Purpose-driven CEO with 30+ years of global experience driving profitable growth and transformation across multiple industries. Expert in strategy, innovation, and operational excellence, with a passion for building high-performance teams and fostering a culture of continuous improvement.",
+    instaicon: instaIcon,
+    instalink: "#",
+    linkedinicon: LinkedInIcon,
+    linkedinlink: "https://www.linkedin.com/in/niranjan-mahabalappa-1741822?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    imagePath: niranjanmahabalappa
   },
   {
     name: "Benedict Machado",
@@ -53,17 +61,7 @@ const alumniData = [
     imagePath: BenedictMachado
   },
   {
-    name: "Sahil Barua",
-    role: "Co-founder and CEO of Delhivery",
-    intro: "Sahil Barua is the co-founder and CEO of Delhivery, India's largest fully integrated logistics provider. He has scaled the company from a local courier service into a multi-billion dollar enterprise, transforming the e-commerce and supply chain landscape through technology.",
-    instaicon: instaIcon,
-    instalink: "#",
-    linkedinicon: LinkedInIcon,
-    linkedinlink: "https://www.linkedin.com/in/sahil-barua-6229764/",
-    imagePath: sahilbarua
-  },
-  {
-    name: "Thomas Zacharia",
+      name: "Thomas Zacharia",
     role: "Indian-American scientist",
     intro: "Dr. Thomas Zacharia is a distinguished computer scientist who served as the Director of the Oak Ridge National Laboratory (ORNL) in the USA. His leadership focused on leveraging high-performance computing to solve major scientific challenges in energy and national security.",
     instaicon: instaIcon,
@@ -72,13 +70,24 @@ const alumniData = [
     linkedinlink: "https://www.linkedin.com/in/thomas-zacharia-3345592/",
     imagePath: ThomasZacharia
   },
-{
+  {
+    name: "K Ullas Karanth",
+    role: "Zoologist",
+    intro: "Dr. K. Ullas Karanth is a world-renowned conservation zoologist and a leading authority on tigers. As the Director Emeritus at the Centre for Wildlife Studies, he pioneered the use of camera traps for wildlife population studies, revolutionizing conservation science.",
+    instaicon: instaIcon,
+    instalink: "#",
+    linkedinicon: LinkedInIcon,
+    linkedinlink: "https://www.linkedin.com/in/k-ullas-karanth-486161a/",
+    imagePath: kullaskaranth
+  
+  },
+  {
     name: "Shashank Avadhani",
     role: "Founder and CEO of Alyve Health",
     intro: "Shashank Avadhani is the co-founder and CEO of Alyve Health, a health-tech platform providing comprehensive healthcare solutions. An alumnus of XLRI Jamshedpur, he is focused on leveraging technology to make quality healthcare more accessible, affordable, and engaging for users.",
     instaicon: instaIcon,
     instalink: "#",
-    linkedinicon: LinkedInIcon, 
+    linkedinicon: LinkedInIcon,
     linkedinlink: "https://www.linkedin.com/in/shashank-avadhani-6262973/",
     imagePath: shashankavadhani
   }

@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import About from '../About/About';
+import EventsSection from '../Events/EventsSection';
 import Contact from '../Contact/contacts';
 import './Homepage.css';
-import bannerImage from '../../assets/bg1.png';
+import bannerImage from '../../assets/mech.jpg.jpeg';
 import visionIcon from '../../assets/vision.png';
 import useTypewriter from '../../animation/useTypwriter2';
 
 const HomePage = () => {
-  const typewrite = useTypewriter(); 
+  const typewrite = useTypewriter();
   const [hoveredCard, setHoveredCard] = React.useState(null);
+  const location = useLocation();
+  const aboutRef = useRef(null);
+  const eventsRef = useRef(null);
+
+  useEffect(() => {
+    if (location.state?.scrollTo === 'about') {
+      aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+    } else if (location.state?.scrollTo === 'events') {
+      eventsRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location.state]);
 
   return (
     <div className='page'>
@@ -77,7 +90,8 @@ const HomePage = () => {
 
       {/* ===== ABOUT, CONTACT ===== */}
       <div className="dashed-divider"></div>
-      <About />
+      <About ref={aboutRef} />
+      <EventsSection ref={eventsRef} />
       <Contact />
     </div>
   );

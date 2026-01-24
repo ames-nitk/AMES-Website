@@ -1,23 +1,31 @@
+import event1 from "../assets/event1.jpeg";
+import event2 from "../assets/event2.jpeg";
+import event3 from "../assets/event3.jpeg";
+import event4 from "../assets/event4.jpeg";
 const eventsData = [
   {
-    title: "Mechconnect",
-    details: "Details about it - (Absolutely! You can explore our design services for 30-days. Plus, we offer a complimentary personalized 60-minute onboarding session to get you started.)",
-    image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+    title: "Fishery Visit",
+    details: "AMES NITK visited Aquatic Biosystems, Mangalore, with CSD NITK and found imported fish automation struggles with Indian species. We’re building indigenous solutions: an AI-based Smart Fish Counter and an adjustable Variable Fish Size Sorter.",
+    image: event1,
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7409597172339359744'
   },
   {
-    title: "CADathons",
-    details: "Master the art of 3D modeling in this high-stakes design sprint. From conceptual sketching to final rendering, CADathons test your technical precision, speed, and ability to engineer solutions for real-world manufacturing.",
-    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
+    title: "Future of Industrial Robotics – AMES Expert Talk",
+    details: "AMES NITK successfully hosted a two-day online expert session series on Industrial Robotics and Engineering Practices, featuring Prof. Arun Udai (IIT Dhanbad). The sessions covered good engineering practices from projects to products and insights into collaborative robotics (COBOTS).",
+    image: event2,
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7369934887786762240'
   },
   {
-    title: "Design Sprint",
-    details: "A high-energy workshop where teams rapidly prototype and test ideas with guidance from industry experts.",
-    image: "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80"
+    title: "Mock Group Discussion",
+    details: "AMES NITK hosted a Mock GD session for the ’27 batch, with 27 participants, four rounds, rotating moderators, and feedback.",
+    image: event3,
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7364246502891794433'
   },
   {
-    title: "Tech Talks",
-    details: "Monthly sessions with guest speakers from leading tech firms, sharing insights on current trends and innovations.",
-    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80"
+    title: "AI in Mechanical Systems",
+    details: "AMES NITK hosted the first Mechonnect Series session on AI in Mechanical Systems, engaging 110+ alumni and students successfully.",
+    image: event4,
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7364246306451574784'
   }
 ];
 

@@ -48,7 +48,7 @@ const Navbar = () => {
           </a>
         </li>
         <li><a href="/projects" onClick={closeMenu}>Projects</a></li>
-        <li><a href="#" onClick={closeMenu}>Teams</a></li>
+        {/* <li><a href="#" onClick={closeMenu}>Teams</a></li> */}
         <li>
           <a
             href="/Event"
@@ -72,6 +72,9 @@ const Navbar = () => {
           >
             Contact
           </a>
+        </li>
+        <li>
+          <a href="../../assets/AMES-DAY.pdf" download>AMES-DAY</a>
         </li>
       </ul>
 

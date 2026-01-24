@@ -150,12 +150,21 @@
   color: #ffffff;
   font-weight: 200;
   position: relative;
+  text-align: left;
   top: 30px;
+}
+
+.alumni-card:hover {
+  transition: background-color 0.3s ease-in;
+  opacity: 1;
+  background-color: #2a2a2a;
+  z-index: 1;
 }
 
 .alumni-card:hover .alumni-intro {
   opacity: 1;
   visibility: visible;
+
 }
 
 .alumni-card::before {
@@ -177,12 +186,17 @@
 
 .alumni-card:hover {
   transition: background-color 0.3s ease-in;
+
+  color: #fff;
+  
+
 }
 
 .alumni-role {
   margin-top: 0.5rem;
   font-size: 1.1rem;
   text-align: left;
+  
 }
 
 .special-alumni-card {

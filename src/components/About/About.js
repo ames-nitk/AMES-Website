@@ -74,21 +74,21 @@ const About = () => {
         <div className="alumni-grid" >
           {alumniData.map((alumni, idx) => (
             <div
-              className={`${idx === 3 ? 'special-alumni-wrapper' : 'alumni-wrapper'}`}
+              className={'alumni-wrapper'}
               key={idx}
             >
-              <div className={`${idx === 3 ? 'special-alumni-card' : 'alumni-card'}`}
+              <div className={ 'alumni-card'}
                 style={{
                   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${alumni.imagePath})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}>
-                <div className={`alumni-intro ${idx === 3 ? 'always-show shifted-intro' : ''}`}>
+                <div className='alumni-intro' >
                   {alumni.intro}
                 </div>
 
                 {alumni.linkedinicon && alumni.linkedinlink && (
-                  <div className={`icon ${idx === 3 ? 'special-icon' : ''}`}>
+                  <div className='icon' >
                     <a href={alumni.linkedinlink} target="_blank" rel="noopener noreferrer">
                       <img src={alumni.linkedinicon} alt="LinkedIn icon" />
                     </a>
@@ -97,12 +97,12 @@ const About = () => {
               </div>
 
               {alumni.name && (
-                <div className={`${idx === 3 ? 'special-alumni-name' : 'alumni-name'}`}>
+                <div className= 'alumni-name'>
                   {alumni.name}
                 </div>
               )}
               {alumni.role && (
-                <div className={`alumni-role ${idx === 3 ? 'special-alumni-role' : ''}`}>
+                <div className='alumni-role'>
                   {alumni.role}
                 </div>
               )}
@@ -111,7 +111,7 @@ const About = () => {
 
           ))}
         </div>
-        <EventsSection /> 
+       
       </div>
     </div>
 

@@ -1,11 +1,11 @@
-import React, { useEffect, useState,useRef } from "react";
+import React, { useEffect, useState, useRef, forwardRef } from "react";
 import eventsData from "../../data/eventsData.js";
 import "./EventsSection.css";
 
 let scrollToEventSection = () => { };
 const AUTO_NEXT_INTERVAL = 4000; // 4 seconds
 
-const EventsSection = () => {
+const EventsSection = forwardRef((props, ref) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [barKey, setBarKey] = useState(0);
 
@@ -36,8 +36,7 @@ const EventsSection = () => {
       <div className="fp-content-left">
         <div className="fp-header" >Featured Events</div>
         <div className="fp-desc">
-          NITK instituted the Alumni Awards to recognize the exemplary
-          achievements of its former students.
+          AMES NITK organizes impactful events that help students learn, lead, and grow through real industry exposure and skill-building sessions.
         </div>
         <div className="fp-projects-list">
           {eventsData.map((project, idx) => (
@@ -57,7 +56,7 @@ const EventsSection = () => {
                   <div className="fp-project-details">
                     <div className="fp-project-description">{project.details}</div>
                     <a
-                      href="https://www.linkedin.com/company/association-of-mechanical-engineering-students-nitk/"
+                      href={project.link}
                       className="fp-read-more-btn"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -96,7 +95,7 @@ const EventsSection = () => {
       </div>
     </div>
   );
-};
+});
 
 export { scrollToEventSection };
 export default EventsSection;
