@@ -1,0 +1,79 @@
+/* src/components/Updates.css */
+
+.updates-section {
+  padding: 3rem 1.5rem;
+  background-color: #333;
+  text-align: center;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin: 3rem auto;
+  max-width: 90%;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.updates-section h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .updates-section {
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+  }
+  
+  .updates-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .update-card {
+    padding: 1.2rem;
+  }
+  
+  .update-card h4 {
+    font-size: 1.1rem;
+  }
+}
+
+.updates-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f7842b;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.updates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.update-card {
+  background-color: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.update-card h4 {
+  font-size: 1.2rem;
+  color: #f7842b;
+  margin-bottom: 0.5rem;
+}
+
+.update-card p {
+  color: #dedede;
+  line-height: 1.6;
+}

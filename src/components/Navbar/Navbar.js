@@ -1,0 +1,94 @@
+import React, { useState } from 'react';
+import './Navbar.css';
+import logo from '../../assets/AMES_LOGO.png';
+import { scrollToAboutSection } from '../About/About';
+import { scrollToFooterSection } from '../Footer/footer';
+import { scrollToEventSection } from '../Events/EventsSection';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <nav className="navbar">
+      {/* ===== Left: Logo ===== */}
+      <div className="logo-section">
+        <a href="/" onClick={closeMenu}>
+          <img src={logo} alt="AMES Logo" className="logo-img" />
+        </a>
+      </div>
+
+      {/* ===== Hamburger Toggle ===== */}
+      <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+
+      {/* ===== Center: Navigation Links ===== */}
+      <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+        <li><a href="/" onClick={closeMenu}>Home</a></li>
+        <li>
+          <a
+            href="/About"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToAboutSection();
+              closeMenu();
+            }}
+          >
+            About
+          </a>
+        </li>
+        <li><a href="/projects" onClick={closeMenu}>Projects</a></li>
+        <li><a href="#" onClick={closeMenu}>Teams</a></li>
+        <li>
+          <a
+            href="/Event"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToEventSection();
+              closeMenu();
+            }}
+          >
+            Events
+          </a>
+        </li>
+        <li className="mobile-contact">
+          <a
+            href="/Footer"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToFooterSection();
+              closeMenu();
+            }}
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      {/* ===== Right: Contact Button (Desktop) ===== */}
+      <div className="contact-button">
+        <a
+          href="/Footer"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToFooterSection();
+          }}
+        >
+          Contact
+        </a>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

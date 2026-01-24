@@ -1,0 +1,403 @@
+.about-section {
+  scroll-margin-top: 80px;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1800px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.about-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+  max-width: 440px;
+}
+
+.about-us-label {
+  font-size: 1rem;
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  display: block;
+}
+
+.about-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.about-desc {
+  font-size: 1.08rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.88;
+  line-height: 1.6;
+}
+
+.about-btn {
+  background: #f7842b;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.about-btn:hover {
+  background: #d96c1a;
+}
+
+/* Updated Image Styles for Fixed Size on Desktop */
+.about-image img,
+.about-image2 img {
+  width: 550px;
+  height: 350px;
+  object-fit: cover;
+  min-width: initial;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.about-image2 img {
+  margin-right: 100px;
+}
+
+.about-text ul {
+  padding-left: 1.2rem;
+  margin: 0;
+  opacity: 0.88;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.about-text ul li {
+  margin-bottom: 0.5rem;
+}
+
+.about-text {
+  margin: 1.5rem;
+  margin-left: calc(1.5rem - 20px);
+}
+
+.alumni-section {
+  margin-top: 4rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  text-align: center;
+}
+
+.alumni-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  justify-items: center;
+}
+
+.alumni-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+
+.alumni-name {
+  margin-top: 1.2rem;
+  background-color: #2a2a2a;
+  border: 2.5px solid #f7842b;
+  border-radius: 35px;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #f7842b;
+}
+
+.alumni-intro {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-weight: 200;
+  position: relative;
+  top: 30px;
+}
+
+.alumni-card:hover .alumni-intro {
+  opacity: 1;
+  visibility: visible;
+}
+
+.alumni-card:hover {
+  transition: background-color 0.3s ease-in;
+  background-color: #2a2a2a;
+}
+
+.alumni-role {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.special-alumni-card {
+  background-color: #f7842b;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.special-alumni-card:hover {
+  background-color: #f7842b;
+}
+
+.alumni-intro.always-show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #fff;
+}
+
+.special-alumni-name {
+  background-color: #fff;
+  color: #f7842b;
+  border: 2px solid #fff;
+}
+
+.special-alumni-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 2rem;
+}
+
+.alumni-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: left;
+  height: 320px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 72px;
+  height: 72px;
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.alumni-card:hover .icon {
+  opacity: 1;
+}
+
+.icon.img:hover {
+  transform: scale(1.1);
+}
+
+.icon img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Tablet and larger phones */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 2rem 5%;
+  }
+
+  .about-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .about-content-wrapper:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .about-text,
+  .about-text2 {
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-us-label {
+    margin: 0 auto 0.5rem auto;
+  }
+
+  .about-us-label+div {
+    margin: 8px auto 16px auto !important;
+  }
+
+  /* Updated responsive image styles */
+  .about-image img,
+  .about-image2 img {
+    width: 80%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-desc {
+    font-size: 1rem;
+  }
+
+  .about-text ul {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .alumni-section {
+    margin: 2rem 0;
+  }
+
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.about-btn a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 1rem 3%;
+  }
+
+  .about-content-wrapper {
+    gap: 1.5rem;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-desc,
+  .about-text ul,
+  .alumni-role {
+    font-size: 0.9rem;
+  }
+
+  .about-btn {
+    width: 100%;
+  }
+
+  /* Updated responsive image styles */
+  .about-image img,
+  .about-image2 img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .about-content-wrapper {
+    flex-direction: column;
+  }
+
+  .about-content-wrapper:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile phones (general) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 1rem;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  /* Updated responsive image styles */
+  .about-image img,
+  .about-image2 img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .about-content-wrapper {
+    flex-direction: column;
+  }
+
+  .about-content-wrapper:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
