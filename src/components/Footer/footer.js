@@ -22,7 +22,7 @@ const Footer = () => {
                 {/* Left Section */}
                 <div className="footer-left">
                     <div className="zxz">
-                        <img style={{ width: '185px', height: '80px' }} src={Logo} alt="AMES Logo" className="logo" />
+                        <img style={{ width: '200px', height: '120px' }} src={Logo} alt="AMES Logo" className="logo" />
                     </div>
                     <p>
                         Association of Mechanical Engineering Students (AMES),<br />

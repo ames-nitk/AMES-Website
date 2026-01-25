@@ -4,7 +4,7 @@ import './AboutSection-ASHUTOSH.css';
 import kvImage from '../../assets/KV.jpg';
 import murgendrappaImage from '../../assets/Murigendrappa.jpg';
 import nitkImage from '../../assets/nitk.jpg';
-import amesImage from '../../assets/AMES LOGO.png';
+import amesImage from '../../assets/ames div.jpg';
 
 function AboutSection() {
   const fadeRefs = useFadeUpOnScroll();
@@ -50,7 +50,7 @@ function AboutSection() {
             <div className="as-text-column">
               <h3 className="as-card-sub-title">About AMES</h3>
               <div className="as-card-description">
-                The AMES Projects Team is dedicated to enabling hands-on engineering by tackling real-world problems and developing industry-inspired solutions
+               AMES is a dynamic platform by and for Mechanical Engineering students at NITK. We empower each other with hands-on learning, industry insights, and lifelong connections. The AMES Projects Team is dedicated to enabling hands-on engineering by tackling real-world problems and developing industry-inspired solutions
               </div>
             </div>
           </div>
