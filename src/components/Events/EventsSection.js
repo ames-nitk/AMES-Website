@@ -32,7 +32,7 @@ const EventsSection = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <div className="featured-projects-nitk" ref={eventRef}>
+    <div className="featured-projects-nitk" ref={eventRef} id="events">
       <div className="fp-content-left">
         <div className="fp-header" >Featured Events</div>
         <div className="fp-desc">

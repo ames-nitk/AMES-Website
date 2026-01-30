@@ -10,13 +10,18 @@ function AboutSection() {
   const fadeRefs = useFadeUpOnScroll();
 
   useEffect(() => {
-    if (window.location && window.history && window.history.state && window.history.state.usr && window.history.state.usr.scrollToTeams) {
+    const hasTeamsFlag = window.location && window.history && window.history.state && window.history.state.usr && window.history.state.usr.scrollToTeams;
+
+    if (hasTeamsFlag) {
       const section = document.getElementById('as-teams-backbone-section');
       if (section) {
         setTimeout(() => {
           section.scrollIntoView({ behavior: 'smooth' });
         }, 200);
       }
+    } else {
+      // Ensure we start at the top of the page when navigating here normally
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }
   }, []);
 

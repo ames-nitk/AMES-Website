@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import About from '../About/About';
-import EventsSection from '../Events/EventsSection';
+import { useLocation, useNavigate } from 'react-router-dom';
+import About, { scrollToAboutSection } from '../About/About';
+import EventsSection, { scrollToEventSection } from '../Events/EventsSection';
 import Contact from '../Contact/contacts';
 import './Homepage.css';
 import bannerImage from '../../assets/bg1.png';
@@ -12,16 +12,19 @@ const HomePage = () => {
   const typewrite = useTypewriter();
   const [hoveredCard, setHoveredCard] = React.useState(null);
   const location = useLocation();
-  const aboutRef = useRef(null);
-  const eventsRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (location.state?.scrollTo === 'about') {
-      aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+      if (typeof scrollToAboutSection === 'function') scrollToAboutSection();
+      // Clear the state so refresh or clicking Home doesn't re-trigger the scroll
+      navigate(location.pathname, { replace: true, state: {} });
     } else if (location.state?.scrollTo === 'events') {
-      eventsRef.current?.scrollIntoView({ behavior: 'smooth' });
+      if (typeof scrollToEventSection === 'function') scrollToEventSection();
+      // Clear the state so refresh or clicking Home doesn't re-trigger the scroll
+      navigate(location.pathname, { replace: true, state: {} });
     }
-  }, [location.state]);
+  }, [location.state, navigate, location.pathname]);
 
   return (
     <div className='page'>
@@ -90,8 +93,8 @@ const HomePage = () => {
 
       {/* ===== ABOUT, CONTACT ===== */}
       <div className="dashed-divider"></div>
-      <About ref={aboutRef} />
-      <EventsSection ref={eventsRef} />
+      <About />
+      <EventsSection />
       <Contact />
     </div>
   );

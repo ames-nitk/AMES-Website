@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../assets/AMES_LOGO.png';
 import { scrollToAboutSection } from '../About/About';
@@ -8,6 +9,7 @@ import amesDayPdf from "../../assets/AMES-DAY.pdf";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,6 +17,12 @@ const Navbar = () => {
 
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  const handleEventsClick = (e) => {
+    e.preventDefault();
+    navigate('/', { state: { scrollTo: 'events' } });
+    closeMenu();
   };
 
   return (
@@ -38,10 +46,10 @@ const Navbar = () => {
         <li><a href="/" onClick={closeMenu}>Home</a></li>
         <li>
           <a
-            href="/About"
+            href="/"
             onClick={(e) => {
               e.preventDefault();
-              scrollToAboutSection();
+              navigate('/', { state: { scrollTo: 'about' } });
               closeMenu();
             }}
           >
@@ -50,18 +58,7 @@ const Navbar = () => {
         </li>
         <li><a href="/projects" onClick={closeMenu}>Projects</a></li>
         {/* <li><a href="#" onClick={closeMenu}>Teams</a></li> */}
-        <li>
-          <a
-            href="/Event"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToEventSection();
-              closeMenu();
-            }}
-          >
-            Events
-          </a>
-        </li>
+        <li><a href="#" onClick={handleEventsClick}>Events</a></li>
         <li className="mobile-contact">
           <a
             href="/Footer"

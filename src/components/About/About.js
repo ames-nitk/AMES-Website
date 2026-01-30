@@ -33,11 +33,9 @@ const About = () => {
           <div className="about-desc">
             AMES is a dynamic platform by and for Mechanical Engineering students at NITK. We empower each other with hands-on learning, industry insights, and lifelong connections.
           </div>
-          <button className="about-btn">
-            <Link to="/about-details" style={{ color: 'inherit', textDecoration: 'none' }}>
-              Know More
-            </Link>
-          </button>
+          <Link to="/about-details" state={{}} className="about-btn" style={{ color: 'inherit', textDecoration: 'none', display: 'inline-block' }}>
+            Know More
+          </Link>
         </div>
         <div className="about-image">
           <img src={aboutImage} alt="Graduation" />
@@ -57,7 +55,7 @@ const About = () => {
             <li>Bridge the academia-industry gap via projects & mentorship.</li>
             <li>Promote interdisciplinary research & social innovation</li>
           </ul>
-          <button className="about-btn" ><a href='https://mech.nitk.ac.in/' target='_blank' >Explore</a></button>
+          <a className="about-btn" href="https://mech.nitk.ac.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none', display: 'inline-block' }}>Explore</a>
         </div>
       </div>
       <div className="alumni-section">

@@ -10,8 +10,8 @@ import About from './Pages/About/About';
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/events" element={<Events />} />
+      <Route path="/#" element={<Home />} />
+      <Route path="/#/events" element={<Events />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/team" element={<Team />} />
       <Route path="/about-details" element={<About />} />
