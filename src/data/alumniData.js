@@ -8,6 +8,7 @@ import sahilbarua from '../assets/SahilBarua.png';
 import ThomasZacharia from '../assets/ThomasZacharia.jpg';
 import shashankavadhani from '../assets/ShashankAvadhani.jpeg';
 import niranjanmahabalappa from '../assets/nirajanmahabalapa.jpeg';
+import SrinivasBharathy from '../assets/SrinivasBharathy.jpeg';
 const alumniData = [
   {
     name: "KV Kamath",
@@ -18,6 +19,16 @@ const alumniData = [
     linkedinicon: LinkedInIcon,
     linkedinlink: "https://www.linkedin.com/in/k-v-kamath-b8683510/",
     imagePath: kvkamath
+  },
+  {
+    name: "Srinivas Bharathy",
+    role: "Managing Director and CEO at Adrenalin eSystems Limited",
+    intro: "Entrepreneurial senior leader driving SME growth through consulting, SaaS product strategy, and cloud solutions. 360-degree expertise across sales, marketing, and product, helping owner-led businesses scale profitably and solve real-world challenges.",
+    instaicon: instaIcon,
+    instalink: "#",
+    linkedinicon: LinkedInIcon,
+    linkedinlink: "https://www.linkedin.com/in/nsbharathy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    imagePath: SrinivasBharathy
   },
   {
     name: "Aravind Melligeri",
@@ -71,17 +82,17 @@ const alumniData = [
     linkedinlink: "https://www.linkedin.com/in/thomas-zacharia-3345592/",
     imagePath: ThomasZacharia
   },
-  {
-    name: "K Ullas Karanth",
-    role: "Zoologist",
-    intro: "Dr. K. Ullas Karanth is a world-renowned conservation zoologist and a leading authority on tigers. As the Director Emeritus at the Centre for Wildlife Studies, he pioneered the use of camera traps for wildlife population studies, revolutionizing conservation science.",
-    instaicon: instaIcon,
-    instalink: "#",
-    linkedinicon: LinkedInIcon,
-    linkedinlink: "https://www.linkedin.com/in/k-ullas-karanth-486161a/",
-    imagePath: kullaskaranth
+  // {
+  //   name: "K Ullas Karanth",
+  //   role: "Zoologist",
+  //   intro: "Dr. K. Ullas Karanth is a world-renowned conservation zoologist and a leading authority on tigers. As the Director Emeritus at the Centre for Wildlife Studies, he pioneered the use of camera traps for wildlife population studies, revolutionizing conservation science.",
+  //   instaicon: instaIcon,
+  //   instalink: "#",
+  //   linkedinicon: LinkedInIcon,
+  //   linkedinlink: "https://www.linkedin.com/in/k-ullas-karanth-486161a/",
+  //   imagePath: kullaskaranth
   
-  },
+  // },
   {
     name: "Shashank Avadhani",
     role: "Founder and CEO of Alyve Health",

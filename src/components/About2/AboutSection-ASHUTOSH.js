@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useFadeUpOnScroll } from '../../animation/useFadeUpOnScroll';
 import './AboutSection-ASHUTOSH.css';
 import kvImage from '../../assets/KV.jpg';
-import murgendrappaImage from '../../assets/Murigendrappa.jpg';
+import kattimaniImage from '../../assets/kattimani.png';
 import nitkImage from '../../assets/nitk.jpg';
 import amesImage from '../../assets/ames div.jpg';
 
@@ -68,8 +68,8 @@ function AboutSection() {
           <div className="as-backbone-top-row">
             {[1, 2].map((i) => (
               <div className="as-member-card as-large" key={i}>
-                <img src={i === 1 ? murgendrappaImage : kvImage} alt={i === 1 ? 'KV' : 'Murgendrappa'} className="as-member-img-box as-large" />
-                <div className="as-member-name">{i === 1 ?  'Dr. S M Murigendrappa' : 'Dr. Khyati Verma'}</div>
+                <img src={i === 1 ? kattimaniImage : kvImage} alt={i === 1 ? 'KV' : 'Murgendrappa'} className="as-member-img-box as-large" />
+                <div className="as-member-name">{i === 1 ?  'Subhaschandra Kattimani' : 'Dr. Khyati Verma'}</div>
                 <div className="as-member-role">{i === 1 ?  'Head of the Department (HOD)' : 'Faculty Advisor'}</div>
               </div>
             ))}

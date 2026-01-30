@@ -65,11 +65,6 @@ const PrivacyPolicy = () => {
         You can choose to disable cookies through your individual browser settings.
       </p>
 
-      <h2 style={styles.sectionTitle}>5. Contact Us</h2>
-      <p style={styles.text}>
-        If you have any questions about how we handle user data and personal information, 
-        feel free to contact us at <strong>privacy@yourdomain.com</strong>.
-      </p>
     </div>
   );
 };
